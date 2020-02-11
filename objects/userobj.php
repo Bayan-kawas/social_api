@@ -39,7 +39,7 @@ if($num>0){
             "email" => $email,
             "phone_number" => $phone_number,
         );
-        $faker = Faker\Factory::create();
+      
 
  
         array_push($users_arr["records"], $eachuser);
@@ -53,15 +53,9 @@ if($num>0){
     
     echo json_encode($users_arr);
 }
-$data=[];
 
-for($i=0;$i<10;$i++){
- $data[$i]['first_name']=$faker->name;
- $data[$i]['last_name']=$faker->name;
- $data[$i]['password']=$faker->password;
-}
-print_r($data);
- 
+
+
 // no products found will be here
  
 
